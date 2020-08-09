@@ -33,7 +33,7 @@ And this is how the control board looked
 
 Breaking it down, there are 4 NPN transistors here, 3 of them controlling the fan speed - Low, Medium and High speed, passing on Live to the motor on the selected speed (labels L/M/H on the left side of the PCB), and the 4th one giving Live to the second motor which enables fan oscillation (labled SW on the PCB). The rest are buttons, a buzzer and the whole top part of the PCB is dedicated to the LCD display and status LEDs. The Neutral wire is bridged to both fans and the board with cable crimps.
 
-At this point I was about to sit down at kicad, get a [nodeMCU](https://www.nodemcu.com/index_en.html), boot up (ESPHome)[https://esphome.io], and start designing a replacement board. But it turns out I didn't have to
+At this point I was about to sit down at kicad, get a [nodeMCU](https://www.nodemcu.com/index_en.html), boot up [ESPHome](https://esphome.io), and start designing a replacement board. But it turns out I didn't have to
 
 ---
 
