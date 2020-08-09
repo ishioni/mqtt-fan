@@ -1,0 +1,27 @@
+{
+  "~": "tasmota/%topic%",
+  "name": "%topic%",
+  "uniq_id": "%topic%",
+  "dev": {
+    "mf": "Sonoff",
+    "mdl": "iFan03",
+    "name": "%topic%",
+    "ids": [
+      "%topic%"
+    ]
+  },
+  "avty_t": "~/LWT",
+  "pl_avail": "Online",
+  "pl_not_avail": "Offline",
+  "stat_t": "~/FANPOWER",
+  "cmd_t": "~/cmnd/FanSpeed",
+  "spd_stat_t": "~/FANSPEED",
+  "spd_cmd_t": "~/cmnd/FanSpeed",
+  "pl_lo_spd": "1",
+  "pl_med_spd": "2",
+  "pl_hi_spd": "3",
+  "osc_cmd_t": "~/cmnd/POWER1",
+  "osc_stat_t": "~/POWER1",
+  "pl_osc_on": "ON",
+  "pl_osc_off": "OFF"
+}

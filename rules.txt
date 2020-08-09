@@ -1,0 +1,3 @@
+Rule1 on System#Boot do publish2 homeassistant/fan/%topic%/config {"~":"tasmota/%topic%","name":"%topic%","uniq_id":"%topic%","dev":{"mf":"Sonoff","mdl":"iFan03","name":"%topic%","ids":["%topic%"]},"avty_t":"~/LWT","pl_avail":"Online","pl_not_avail":"Offline","stat_t":"~/FANPOWER","cmd_t":"~/cmnd/FanSpeed","spd_stat_t":"~/FANSPEED","spd_cmd_t":"~/cmnd/FanSpeed","pl_lo_spd":"1","pl_med_spd":"2","pl_hi_spd":"3","osc_cmd_t":"~/cmnd/POWER1","osc_stat_t":"~/POWER1","pl_osc_on":"ON","pl_osc_off":"OFF"} endon
+
+Rule2 on FanSpeed#Data>0 do backlog publish2 tasmota/%topic%/FANSPEED %value%; publish2 tasmota/%topic%/FANPOWER ON endon on FANSPEED#DATA=0 do backlog publish2 tasmota/%topic%/FANPOWER OFF; publish2 tasmota/%topic%/FANSPEED off; Power1 0 endon
